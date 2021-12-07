@@ -1,7 +1,7 @@
 # 入力された平均点を計算するプログラム
 score = [0] * 1000
 # 入力部
-def inNUm(num, i):
+def inNum(num, i):
     score[i] = num
 
 # 演算部
@@ -30,7 +30,7 @@ while True:
     num = int(input("score = "))
 
     if 0 <= num <= 100:
-        inNUm(num, c)
+        inNum(num, c)
         c = c + 1
     elif num == -1:
         re = ave(c)
